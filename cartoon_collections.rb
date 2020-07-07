@@ -1,4 +1,4 @@
-require 'pry'
+
 def square_array(array)
  new_array = []
  array.each do |element|    
@@ -27,8 +27,7 @@ def find_valid_calls(planeteer_calls)
   valid_calls = ["Earth!", "Wind!", "Fire!", "Water!", "Heart!"]
   planeteer_calls.each do |string|
     valid_calls.each do |element|
-        if element == string
-          binding.pry
+        if element == string 
        return string
      end 
     end
